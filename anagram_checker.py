@@ -1,5 +1,8 @@
 # This was a pretty good solution to this problem
 
+from functools import reduce
+
+
 def anagrams(word, words):
 
     def letter_count(str):
