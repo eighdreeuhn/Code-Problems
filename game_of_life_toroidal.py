@@ -6,7 +6,7 @@ def get_generation(cells, generation):
         n = 0
         for i in range(-1, 2):
             for j in range(-1, 2):
-                # print((r, c), (r + i) % height, (c + j) % width, matrix[(r + i) % height][(c + j) % width])
+                print((r, c), (r + i) % height, (c + j) % width, matrix[(r + i) % height][(c + j) % width])
                 if matrix[(r + i) % height][(c + j) % width] == 1 and not (i == 0 and j == 0):
                     n += 1
         return n
@@ -23,7 +23,6 @@ def get_generation(cells, generation):
                 elif count_neighbors(k, l, cells) > 3 and cells[k][l] == 1:
                     cells_copy[k][l] = 0
         cells = cells_copy.copy()
-        print(cells)
     return cells
 
 
