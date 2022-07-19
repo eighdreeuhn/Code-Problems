@@ -93,4 +93,28 @@
 # print(maxlen(5, 12))
 
 
+heavenly = ['甲', '乙', '丙', '丁', '戊', '己', '庚', '辛', '壬', '癸']
+earthly =  ['子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉', '戌', '亥']
+
+
+# def how_old(birth_year, present_year):
+#     year =
+#     return year
+#
+#
+# print(how_old("甲子", "乙丑"))
+
+
+elements = [1, 3, 2, 3, 0, 1, 3]
+curr = 0
+
+for ele in elements:
+    pass
+    if (ele == 0):
+        curr = ele
+        break
+    elif (ele % 2 == 0):
+        continue
+    print(ele)
+print(curr)
 
