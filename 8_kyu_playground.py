@@ -1,5 +1,6 @@
 # Ego boosting 8kyu Codewars porblems for staying sharp
-
+import math
+from collections import Counter
 #
 # def is_opposite(s1,s2):
 #     if s1.lower() == s2.lower():
@@ -27,7 +28,7 @@
 # print(reverse_words("hello world!"))
 
 
-# from collections import Counter
+
 #
 #
 # def well(x):
@@ -94,8 +95,7 @@
 
 
 heavenly = ['甲', '乙', '丙', '丁', '戊', '己', '庚', '辛', '壬', '癸']
-earthly =  ['子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉', '戌', '亥']
-
+earthly = ['子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉', '戌', '亥']
 
 # def how_old(birth_year, present_year):
 #     year =
@@ -105,16 +105,35 @@ earthly =  ['子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉'
 # print(how_old("甲子", "乙丑"))
 
 
-elements = [1, 3, 2, 3, 0, 1, 3]
-curr = 0
+# elements = [1, 3, 2, 3, 0, 1, 3]
+# curr = 0
+#
+# for ele in elements:
+#     pass
+#     if (ele == 0):
+#         curr = ele
+#         break
+#     elif (ele % 2 == 0):
+#         continue
+#     print(ele)
+# print(curr)
 
-for ele in elements:
-    pass
-    if (ele == 0):
-        curr = ele
-        break
-    elif (ele % 2 == 0):
-        continue
-    print(ele)
-print(curr)
 
+# def solution(n, b):
+#     b_index_1 = -int(math.log(b, 2)) - 1
+#     print(b_index_1, bin(b))
+#     return [num for num in range(1, 2**n) if bin(num)[b_index_1] == '1']
+#
+#
+# print(solution(4, 2))
+
+
+def gcd_lcm(x, y):
+    for n in range(x + 1, y):
+        print(n, x*y//n)
+        if (x*y)/n == (x*y)//n:
+            return n, (x * y) / n
+    return None
+
+
+gcd_lcm(6, 36)
