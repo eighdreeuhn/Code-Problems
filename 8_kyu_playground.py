@@ -1,6 +1,6 @@
-# Ego boosting 8kyu Codewars porblems for staying sharp
+# Ego boosting 8kyu Codewars problems for staying sharp
 import math
-from collections import Counter
+# from collections import Counter
 #
 # def is_opposite(s1,s2):
 #     if s1.lower() == s2.lower():
@@ -26,9 +26,6 @@ from collections import Counter
 #
 #
 # print(reverse_words("hello world!"))
-
-
-
 #
 #
 # def well(x):
@@ -128,12 +125,97 @@ earthly = ['子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉',
 # print(solution(4, 2))
 
 
-def gcd_lcm(x, y):
-    for n in range(x + 1, y):
-        print(n, x*y//n)
-        if (x*y)/n == (x*y)//n:
-            return n, (x * y) / n
-    return None
+# def gcd_lcm(x, y):
+#     for n in range(x + 1, y):
+#         print(n, x*y//n)
+#         if (x*y)/n == (x*y)//n:
+#             return n, (x * y) / n
+#     return None
+#
+#
+# gcd_lcm(6, 36)
 
 
-gcd_lcm(6, 36)
+# def knight_path(start, end):
+#     path = [start]
+#     distance = ((path[-1][0] - end[0]) ** 2 + (path[-1][1] - end[1]) ** 2) ** 0.5
+#
+#     def seek(pos, target):
+#         pi = math.pi
+#         angle_of_attack = math.atan2(target[1] - pos[1], target[0] - pos[0])
+#         if 0 <= angle_of_attack < pi/4:
+#             return pos[0] + 2, pos[1] + 1
+#         elif pi/4 <= angle_of_attack < pi/2:
+#             return pos[0] + 1, pos[0] + 2
+#         elif pi/2 <= angle_of_attack < 3*pi/4:
+#             return pos[0] - 1, pos[0] + 2
+#         elif 3*pi/4 <= angle_of_attack < pi:
+#             return pos[0] - 2, pos[0] + 1
+#         elif pi <= angle_of_attack < 5*pi/4:
+#             return pos[0] - 2, pos[0] - 1
+#         else:
+#             return pos[0] - 1, pos[0] - 2
+#
+#     while distance > 3:
+#         path.append(seek(path[-1], end))
+#         distance = ((path[-1][0] - end[0]) ** 2 + (path[-1][1] - end[1]) ** 2) ** 0.5
+#
+#
+#     return path
+#
+#
+# print(knight_path((0, 0), (111, 111)))
+
+
+# def count_vegetables(string):
+#
+#     veggies = [
+#         "cabbage",
+#         "carrot",
+#         "celery",
+#         "cucumber",
+#         "mushroom",
+#         "onion",
+#         "pepper",
+#         "potato",
+#         "tofu",
+#         "turnip"
+#     ]
+#
+#     solution = [
+#         [0, 'cabbage'],
+#         [0, 'carrot'],
+#         [0, 'celery'],
+#         [0, 'cucumber'],
+#         [0, 'mushroom'],
+#         [0, 'onion'],
+#         [0, 'pepper'],
+#         [0, 'potato'],
+#         [0, 'tofu'],
+#         [0, 'turnip']
+#     ]
+#
+#     veg_list = string.split(' ')
+#
+#     for item in veg_list:
+#         if item in veggies:
+#             solution[veggies.index(item)][0] += 1
+#
+#     return list(map(lambda i: (i[0], i[1]), filter(lambda v: v[0] != 0, solution)))
+#
+#
+#
+#
+# print(count_vegetables('potato tofu cucumber cabbage turnip pepper onion carrot celery mushroom potato tofu cucumber cabbage'))
+#
+#
+# def is_anagram(s, t):
+#     return [*reversed([*s])] == [*t]
+#
+#
+# print(is_anagram('rac', 'car'))
+
+
+s = 'Python RockS!'
+
+print(s.swapcase().rpartition('S')[2])
