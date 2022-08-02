@@ -91,8 +91,8 @@ import math
 # print(maxlen(5, 12))
 
 
-heavenly = ['甲', '乙', '丙', '丁', '戊', '己', '庚', '辛', '壬', '癸']
-earthly = ['子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉', '戌', '亥']
+# heavenly = ['甲', '乙', '丙', '丁', '戊', '己', '庚', '辛', '壬', '癸']
+# earthly = ['子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉', '戌', '亥']
 
 # def how_old(birth_year, present_year):
 #     year =
@@ -216,6 +216,26 @@ earthly = ['子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉',
 # print(is_anagram('rac', 'car'))
 
 
-s = 'Python RockS!'
+# s = 'Python RockS!'
+#
+# print(s.swapcase().rpartition('S')[2])
 
-print(s.swapcase().rpartition('S')[2])
+
+# def split_and_merge(string_, separator):
+#     words = string_.split(' ')
+#     for i, word in enumerate(words):
+#         words[i] = separator.join([letters for letters in word])
+#     return ' '.join(words)
+#
+
+# print(split_and_merge("My name is John"," "))
+
+
+def double(l):
+    l *= 2
+    return l
+
+
+l = [1, 2, 3, 4, 5]
+l = double(l)
+print(l)
